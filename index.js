@@ -7,10 +7,12 @@ function hitungluas() {
 }
 
 function hitungkeliling() {
-    var angkaSisi = document.getElementById("sisi");
-    var hasilaKeliling = document.getElementById("hasilKeliling")
+    var angkaSisi1 = document.getElementById("sisi1");
+    var angkaSisi2 = document.getElementById("sisi2");
+    var angkaSisi3 = document.getElementById("sisi3");
+    var hasilKeliling = document.getElementById("hasilKeliling")
 
-    hasilaKeliling.value = 3 * Number(angkaSisi.value);
+    hasilKeliling.value = Number(angkaSisi1.value) + Number(angkaSisi2.value) + Number(angkaSisi3.value);
 }
 
 function resetLuas() {
@@ -20,6 +22,8 @@ function resetLuas() {
 }
 
 function resetKeliling(){
-    document.getElementById("sisi").value='';
+    document.getElementById("sisi1").value='';
+    document.getElementById("sisi2").value='';
+    document.getElementById("sisi3").value='';
     document.getElementById("hasilKeliling").value='';
 }
